@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--<link rel="shortcut icon" href="favicon.ico"/>-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/moneyctrl.css"/>
+    <link rel="stylesheet" href="css/baicaijia.css"/>
+    <link rel="stylesheet" href="css/getcouponproduct.css"/>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/template/template.js"></script>
+    <!--<script src="node_modules/Swiper-3.4.2/dist/js/swiper.jquery.min.js"></script>-->
+    <script src="js/getcouponproduct.js"></script>
+    <title>优惠券</title>
+</head>
+<body>
+<!--顶部-->
+<header class="head" id="baicai">
+    <div class="back"><a href="javascript:;">&lt;</a></div>
+    <h1>优惠券</h1>
+    <div class="app_down">
+        <a href="#"><img src="images/header_app.png" width="34" alt=""/></a>
+    </div>
+</header>
+<!--内容-->
+<div class="main_cp">
+    <div class="hint">
+        --点餐前出示手机中的优惠券，即可享受优惠--
+    </div>
+    <div class="main_list">
+        <ul>
+            <!--<li>-->
+                <!--<a href="javascript:;">-->
+                    <!--<div class="pic">-->
+                        <!--<img src="images/chpro.png" alt=""/>-->
+                    <!--</div>-->
+                    <!--<div class="info">-->
+                        <!--<h3>C24  抹茶/抹茶双旋冰淇淋花筒 2017年3月凭肯德基优惠券</h3>-->
+                        <!--<h2>-->
+                            <!--<em>&yen;</em>-->
+                            <!--7-->
+                        <!--</h2>-->
+                        <!--<div class="time">-->
+                            <!--有效期至3月31日-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="jiantou">&gt;</div>-->
+                <!--</a>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</div>
+
+<!--底部-->
+<div class="nav">
+    <a href="index.html">首页&nbsp;&nbsp;</a>
+    > &nbsp;优惠券
+</div>
+<footer class="foot">
+    <div class="foot_top clearfix">
+        <a href="#">登陆</a>
+        <a href="#">注册</a>
+        <a style="width:40%;border:0" href="#">返回顶部</a>
+    </div>
+    <div class="foot_bottom">
+        <p><a href="#" class="red">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            -- 掌上比价平台
+        </p>
+        <p><a href="#">m.manmanbuy.com</a></p>
+    </div>
+</footer>
+<!--模板-->
+<script type="text/html" id="ticket">
+    {{if result}}
+    {{each result as v}}
+    <li class="maskclick">
+        <a href="javascript:;">
+            <div class="pic">
+                {{#v.couponProductImg}}
+            </div>
+            <div class="info">
+                <h3>{{v.couponProductName}}</h3>
+                <h2>
+                    <em>{{v.couponProductPrice}}</em>
+                </h2>
+                <div class="time">
+                    {{v.couponProductTime}}
+                </div>
+            </div>
+            <div class="jiantou">&gt;</div>
+        </a>
+    </li>
+    {{/each}}
+    {{/if}}
+</script>
+<!--遮罩-->
+<div class="mask">
+    <div class="maskslider">
+        <div class="pic">
+            <ul class="clearfix" id="imgs">
+                <!--<li><img src="images/kfc.jpg" alt=""/></li>-->
+                <!--<li><img src="images/kfc.jpg" alt=""/></li>-->
+                <!--<li><img src="images/kfc.jpg" alt=""/></li>-->
+            </ul>
+        </div>
+        <div class="arrow">
+            <div class="arrow_l">&lt;</div>
+            <div class="arrow_r">&gt;</div>
+        </div>
+    </div>
+
+</div>
+
+<!--遮罩模板-->
+<script type="text/html" id="mask_pic">
+    {{if result}}
+    {{each result as v}}
+        <li>{{#v.couponProductImg}}</li>
+    {{/each}}
+    {{/if}}
+</script>
+</body>
+</html>

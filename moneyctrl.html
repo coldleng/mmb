@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--<link rel="shortcut icon" href="favicon.ico"/>-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/productList.css"/>
+    <link rel="stylesheet" href="css/moneyctrl.css"/>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/template/template.js"></script>
+    <script src="js/moneyctrl.js"></script>
+    <title>比价详情</title>
+</head>
+<body>
+    <header class="head">
+        <div class="back"><a href="javascript:;">&lt;</a></div>
+        <h1>省钱控 - 最新优惠</h1>
+        <div class="app_down">
+            <a href="#"><img src="images/header_app.png" width="34" alt=""/></a>
+        </div>
+    </header>
+    <!--主体-->
+    <main class="main">
+        <div class="main_product_list">
+            <!--<ul>-->
+                <!--<li class="clearfix"><a href="#">-->
+                    <!--<div class="pic fl">-->
+                        <!--<img src="images/tv.jpg" width="100" alt=""/>-->
+                    <!--</div>-->
+                    <!--<div class="info clearfix">-->
+                        <!--<div class="info_title">-->
+                            <!--<p>2017智慧网购专题：直击315</p>-->
+                            <!--<span>跟着小编一起，评论有奖</span>-->
+                        <!--</div>-->
+                        <!--<div class="info_other">-->
+                            <!--<span class="mall">慢慢买 | 03-15 13:03</span>-->
+                            <!--<span class="comment">-->
+                                <!--<i class="icon"></i>-->
+                                <!--<span>35</span>-->
+                            <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        </div>
+    </main>
+    <!-- 赛选-->
+    <div class="product">
+        <div class="product_filter clearfix">
+            <div class="btn fl" id="pre">
+                <a href="javascript:void(0)">上一页</a>
+            </div>
+            <div class="search">
+                <select class="fl">
+                    <!--<option value="1">1/3</option>-->
+                </select>
+            </div>
+            <div class="btn fr" id="next">
+                <a href="javascript:void(0)">下一页</a>
+            </div>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <a href="index.html">首页&nbsp;&nbsp;</a>
+        >&nbsp;省钱控
+    </div>
+    <footer class="foot">
+    <div class="foot_top clearfix">
+        <a href="#">登陆</a>
+        <a href="#">注册</a>
+        <a style="width:40%;border:0" href="#">返回顶部</a>
+    </div>
+    <div class="foot_bottom">
+        <p><a href="#" class="red">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            -- 掌上比价平台
+        </p>
+        <p><a href="#">m.manmanbuy.com</a></p>
+    </div>
+</footer>
+
+     <!--模板 -->
+    <script type="text/html" id="ulList">
+        {{if result}}
+        {{each result as value}}
+        <ul>
+            <li class="clearfix">
+                <a href="chDiscount.html?productid={{value.productId}}&target=1">
+                    <div class="pic fl">
+                        {{#value.productImgSm}}
+                    </div>
+                    <div class="info clearfix">
+                        <div class="info_title">
+                            <p>{{value.productName}}</p>
+                            <span>{{value.productPinkage}}</span>
+                        </div>
+                    <div class="info_other">
+                        <span class="mall">{{value.productFrom}} |{{value.productTime}}</span>
+                            <span class="comment">
+                                <i class="icon"></i>
+                                <span>{{value.productComCount}}</span>
+                            </span>
+                    </div>
+                </div>
+            </a>
+            </li>
+        </ul>
+        {{/each}}
+        {{/if}}
+    </script>
+</body>
+</html>

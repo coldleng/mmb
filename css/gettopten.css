@@ -1,0 +1,170 @@
+.product_title ul li a{
+    font-weight: normal;
+}
+.main_listtop{
+    background-color: #eee;
+}
+.main_hot{
+    font-size: 14px;
+    color: #874604;
+    height: 40px;
+    padding-left: 10px;
+    line-height: 40px;
+    margin: 10px 5px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    font-weight: 700;
+}
+.sortlist{
+    background-color: #eee;
+}
+.sortlist ul li{
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px;
+    /*background: url(../images/arrow1.gif)right center no-repeat;*/
+    position: relative;
+}
+.sortlist ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.sortlist ul li i{
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.sortlist em{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background: #c9c9c9;
+    color: #FFFFFF;
+    line-height: 20px;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+    font-size: 14px;
+}
+.sortlist .inner{
+    display: inline-block;
+}
+.sortlist ul li .title{
+    color: #000;
+    font-size:16px;
+}
+.sortlist ul li p{
+    color: #999999;
+    margin-top: 3px;
+    font-size: 12px;
+}
+.sortlist em.top1{
+    background-color: #f10e0e;
+}
+.sortlist em.top2 {
+    background-color: #ff9314;
+}
+.sortlist em.top3 {
+    background: #8adf5b;
+}
+.main_listtop .prolist ul li{
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px;
+}
+.main_listtop .prolist ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.main_listtop .prolist .pic{
+    float: left;
+    margin-right: 10px;
+}
+.main_listtop .prolist .pic img{
+    width: 100px;
+    height: 100px;
+}
+.main_listtop .prolist .info{
+    font-size: 14px;
+    line-height: 24px;
+}
+.main_listtop .prolist .info .tit {
+    color: #333333;
+    line-height: 22px;
+    min-height: 44px;
+    word-break: break-all;
+}
+.main_listtop .prolist .info .price{
+    height: 25px;
+    margin-top: 4px;
+}
+.main_listtop .prolist .info .price em{
+    font-size: 18px;
+    color: #ea3900;
+    vertical-align: middle;
+}
+.main_listtop .prolist .info .other {
+    font-size: 12px;
+    color: #999999;
+}
+.main_listtop .prolist .info .other span{
+    font-style: normal;
+    margin-right: 10px;
+}
+
+
+/*ÆÀÂÛ*/
+.pl_list li{
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px;
+}
+.pl_list li>a{
+    display: block;
+    width: 100%;
+    height: 80px;
+}
+.pl_list li>a .protit{
+    margin-top: 10px;
+}
+.pl_list li>a .protit .pic{
+    float: left;
+    margin-right: 10px;
+}
+.pl_list li>a .protit .pic img{
+    width: 80px;
+    height: 80px;
+}
+.pl_list li>a .protit .tit{
+    color: #999999;
+    line-height: 22px;
+    font-size: 14px;
+    word-break: break-all;
+}
+.pl_list li .plbox{
+    background: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    margin-top: 10px;
+}
+.pl_list li .plbox a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pl_list li .plbox .name{
+    color: #4f6900;
+    font-size: 14px;
+}
+.pl_list li .plbox .name i{
+    color: #999999;
+    float: right;
+    font-style: normal;
+}
+.pl_list li .plbox .con{
+    color: #000000;
+    margin-top: 10px;
+    line-height: 22px;
+    font-size: 15px;
+    word-break: break-all;
+}

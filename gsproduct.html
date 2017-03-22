@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--<link rel="shortcut icon" href="favicon.ico"/>-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/moneyctrl.css"/>
+    <link rel="stylesheet" href="css/gsproduct.css"/>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/template/template.js"></script>
+    <script src="js/gsproduct.js"></script>
+    <title>比价详情</title>
+</head>
+<body>
+<header class="head">
+    <div class="back"><a href="javascript:;">&lt;</a></div>
+    <h1>凑单品</h1>
+    <div class="app_down">
+        <a href="#"><img src="images/header_app.png" width="34" alt=""/></a>
+    </div>
+</header>
+<!--导航-->
+<nav class="hd">
+    <div class="filter">
+        <ul class="clearfix">
+            <li>
+                <a href="javascript:;">
+                    京东
+                    <i>▲</i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    华北
+                    <i>▲</i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    全部价格
+                    <i>▲</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="search">
+        <img src="images/search.bmp" alt="" width="19"/>
+    </div>
+    <!--下拉-->
+    <!--JD-->
+    <div class="popbox merchant">
+        <ul>
+
+        </ul>
+    </div>
+    <!--华北-->
+    <div class="popbox region">
+        <ul>
+            <li>
+
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--内容-->
+<div class="product_gs">
+    <ul class="clearfix">
+
+    </ul>
+</div>
+
+<div class="nav">
+    <a href="index.html">首页&nbsp;&nbsp;</a>
+    >&nbsp;省钱控
+</div>
+<footer class="foot">
+    <div class="foot_top clearfix">
+        <a href="#">登陆</a>
+        <a href="#">注册</a>
+        <a style="width:40%;border:0" href="#">返回顶部</a>
+    </div>
+    <div class="foot_bottom">
+        <p><a href="#" class="red">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            -- 掌上比价平台
+        </p>
+        <p><a href="#">m.manmanbuy.com</a></p>
+    </div>
+</footer>
+<!--导航第一个模板-->
+<script type="text/html" id="jd">
+    {{if result}}
+    {{each result as v}}
+    <li value="{{v.shopId}}">
+        <a href="javascript:;">{{v.shopName}}</a>
+    </li>
+    {{/each}}
+    {{/if}}
+</script>
+<!--导航第二个模板-->
+<script type="text/html" id="hb">
+    {{if result}}
+    {{each result as v}}
+    <li value="{{v.areaId}}">
+        <a href="javascript:;">{{v.areaName}}</a>
+    </li>
+    {{/each}}
+    {{/if}}
+</script>
+<!--内容模板-->
+<script type="text/html" id="pdt">
+    {{if result}}
+    {{each result as v}}
+    <li>
+        <a href="javascript:;">
+            <div class="pic">
+                <img src="{{#v.productImg}}" alt=""/>
+
+            </div>
+            <div class="title">{{v.productName}}</div>
+            <div class="other clearfix">
+                <div class="price">
+                    {{v.productPrice}}
+                </div>
+                <div class="collect">
+                    去凑单
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+    {{/if}}
+</script>
+</body>
+</html>

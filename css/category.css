@@ -1,0 +1,53 @@
+.main{
+    background: #ebebeb;
+    padding: 5px;
+    /*margin-top: 0;*/
+}
+.main .main_list{
+    background: #ebebeb;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #666;
+    border-radius: 5px;
+
+}
+.main .main_list .main_item>a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-weight: 900;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 16px;
+    background: url("../images/arrow1.gif")right center no-repeat;
+}
+.main .main_list table{
+    width: 100%;
+    /*margin-left: -1px;*/
+    background: #f9f9f9;
+    border-bottom: 2px solid #888;
+    border-top: none;
+    margin-top: -1px;
+    border-right: none;
+}
+.main #tbs td{
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-top: none;
+    text-align: center;
+    width: 33.33%;
+    height: 40px;
+    line-height: 40px
+}
+/*.main .main_list tr td{*/
+    /*border-left: 1px solid #ccc;*/
+/*}*/
+.main #tbs a{
+    display: block;
+    width: 100%;
+    color: #333;
+    /*overflow: hidden;*/
+    white-space:nowrap;
+}
+

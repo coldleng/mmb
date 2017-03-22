@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/css/baicaijia.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/brandTitle.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/chDiscount.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/coupon.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/details.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/getcouponproduct.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/gsproduct.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/inlanddiscount.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/moneyctrl.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/baicaijia.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/brandTitle.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/chDiscount.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/coupon.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/details.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/getcouponproduct.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/gettopten.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/gsproduct.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/moneyctrl.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/productList.js" charset="UTF-8" />
+  </component>
+</project>

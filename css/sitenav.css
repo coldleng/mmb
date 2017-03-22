@@ -1,0 +1,19 @@
+.link_list{
+    width: 300px;
+    margin: 10px auto;
+    font-size: 14px;
+}
+.link_list a{
+    padding: 10px 8px;
+    background: #f4f4f4;
+    border: 1px solid #bfbfbf;
+    float: left;
+    margin: 0 0 5px 5px;
+    font-size: 14px;
+    color: black;
+}
+.link_list a img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+

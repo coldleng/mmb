@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--<link rel="shortcut icon" href="favicon.ico"/>-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/productList.css"/>
+    <link rel="stylesheet" href="css/moneyctrl.css"/>
+    <link rel="stylesheet" href="css/inlanddiscount.css"/>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/template/template.js"></script>
+    <script src="js/inlanddiscount.js"></script>
+    <title>比价详情</title>
+</head>
+<body>
+    <header class="head">
+    <div class="back"><a href="javascript:;">&lt;</a></div>
+    <h1>国内折扣</h1>
+    <div class="app_down">
+        <a href="#"><img src="images/header_app.png" width="34" alt=""/></a>
+    </div>
+    </header>
+    <!--商品列表-->
+    <div class="container">
+        <div class="cu-friend">
+            <ul class="clearfix ullist"></ul>
+            <!--<ul class="clearfix">-->
+                <!--<li>-->
+                    <!--<a href="javascript:;">-->
+                        <!--<div class="img">-->
+                            <!--<img src="images/chpro.png" alt=""/>-->
+                        <!--</div>-->
+                        <!--<div class="title">德国 HERO 英雄 草莓果酱 220g</div>-->
+                        <!--<div class="subtit">   39.9元任选4件</div>-->
+                        <!--<div class="info">-->
+                            <!--<div class="mall">京东商城 | 2017/3/19 16:00</div>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        </div>
+    </div>
+    <div class="nav">
+        <a href="index.html">首页&nbsp;&nbsp;</a>
+        &gt;&nbsp;省钱快报
+    </div>
+    <footer class="foot">
+        <div class="foot_top clearfix">
+            <a href="#">登陆</a>
+            <a href="#">注册</a>
+            <a style="width:40%;border:0" href="#">返回顶部</a>
+        </div>
+        <div class="foot_bottom">
+            <p><a href="#" class="red">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                -- 掌上比价平台
+            </p>
+            <p><a href="#">m.manmanbuy.com</a></p>
+        </div>
+    </footer>
+    <!--模板-->
+    <script type="text/html" id="lists">
+        {{if result}}
+        {{each result as value}}
+
+            <li>
+                <a href="chDiscount.html?productid={{value.productId}}&target=2">
+                    <div class="img">
+                        {{#value.productImg}}
+                    </div>
+                    <div class="title">{{value.productName}}</div>
+                    <div class="subtit">{{value.productPrice}}</div>
+                    <div class="info">
+                        <div class="mall">{{value.productFrom}} | {{value.productTime}}</div>
+                    </div>
+                </a>
+            </li>
+
+        {{/each}}
+        {{/if}}
+    </script>
+</body>
+</html>

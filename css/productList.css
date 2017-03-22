@@ -1,0 +1,123 @@
+.product_title{
+    background-color: #eceaea;
+    /*height: 30px;*/
+}
+.product_title ul{
+    padding-left: 5px;
+}
+.product_title ul>li{
+    float: left;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.product_title ul>li:nth-child(2){
+    margin: 0 10px;
+}
+.product_title ul>li a{
+    color: black;
+}
+.product_list .pro_item{
+    padding: 10px 8px;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.product_list .pro_item .goto{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.product_list .pro_item .pro_pic{
+    float: left;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.product_list .pro_item .pro_pic img{
+    width: 120px;
+    height: 120px;
+}
+.product_list .pro_item .pro_info .pro_info_title{
+    color: #333333;
+    word-break: break-all;
+    font-size: 15px;
+    line-height: 28px;
+    height: 56px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+}
+.product_list .pro_item .pro_info .pro_info_price{
+    color: #ed0000;
+    font-size: 18px;
+    overflow: hidden;
+    margin-top: 6px
+}
+.product_list .pro_item .pro_info .pro_info_price span{
+    font-size: 12px;
+}
+.product_list .pro_item .pro_info .pro_info_other{
+    margin-top: 6px;
+}
+
+.product_filter{
+    margin-top: 20px;
+    text-align: center;
+    background-color:#efefef;
+    padding: 20px 25px 0 25px;
+    overflow: hidden;
+}
+.product_filter .btn {
+    box-sizing: border-box;
+    /*background-color: #d4d4d4;*/
+    background: -webkit-gradient(linear,0 0,0 100%,from(#f1f1f1),to(#d4d4d4));
+    border-bottom: 1px solid #bababa;
+    box-sizing: border-box;
+    box-shadow: 0 0 1px #666;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    overflow: hidden;
+    padding: 8px 20px;
+}
+.product_filter .btn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.product_filter .search{
+    position: relative;
+}
+.product_filter select {
+    border: 1px solid #bababa;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-left: 16px;
+    height: 32px;
+    vertical-align: middle;
+    text-align: center;
+    width: 82px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -41px;
+}
+.product_mess{
+    background-color: #efefef;
+    padding-top: 25px;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 10px;
+}
+.product_mess h3{
+    font-size: 16px;
+    color: black;
+}
+

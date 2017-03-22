@@ -1,0 +1,127 @@
+/*提示信息*/
+.hint{
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+    margin: 8px 0px;
+}
+.main_list{
+    background-color: #fff;
+}
+.main_list li{
+    border-bottom: 1px solid #e7e7e7;
+    position: relative;
+    overflow: hidden;
+}
+.main_list li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: #5a5a5a;
+}
+.main_list .pic{
+    width: 100px;
+    height: 80px;
+    overflow: hidden;
+    margin-right: 10px;
+    float: left;
+}
+.main_list .pic img{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.main_list .info{
+    padding-right: 30px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+}
+.main_list .info h3{
+    margin: 0px;
+    padding: 0px;
+    word-break: break-all;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333333;
+    line-height: 20px;
+}
+.main_list .info h2{
+    font-size: 16px;
+    font-weight: 700;
+}
+.main_list .info .time{
+    font-size: 12px;
+    color: #EE7700;
+    margin-top: 10px;
+}
+.main_list .jiantou{
+    position: absolute;
+    right: 5px;
+    top: 50px;
+    width: 10px;
+    height: 100%;
+    font-size: 20px;
+}
+
+/*遮罩*/
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    /*background-color: red;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    overflow: hidden;
+    display: none;
+}
+/*.mask .maskslider{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*text-align: center;*/
+    /*/!*display: block;*!/*/
+/*}*/
+.mask .maskslider .pic{
+    width: 200px;
+    height:160px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-top: -80px;
+    margin-left: -100px;
+    overflow: hidden;
+}
+.mask .maskslider .pic ul{
+    /*width: 10000%;*/
+}
+.mask .maskslider .pic ul li{
+    width: 200px;
+    height: 160px;
+    float: left;
+}
+.mask .maskslider .arrow>div{
+    width:30px;
+    height: 50px;
+    background-color:#211e1e;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    font-size: 20px;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    z-index: 1000001;
+}
+.mask .maskslider .arrow .arrow_l{
+    left: 25px;
+}
+.mask .maskslider .arrow .arrow_r{
+    right: 25px;
+}

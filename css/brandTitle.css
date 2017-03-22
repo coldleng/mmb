@@ -1,0 +1,30 @@
+.product_title ul li a{
+    font-weight: normal;
+}
+.main_top10{
+    background-color: #eee;
+}
+.main_hot{
+    font-size: 16px;
+    color: #874604;
+    height: 40px;
+    padding-left: 10px;
+    line-height: 40px;
+    margin: 10px 5px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+.top10_title{
+    padding: 0 10px;
+}
+.top10_item a{
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 16px;
+    display: block;
+    padding-left: 0px;
+    border-bottom: 1px solid #ccc;
+    background: url(../images/arrow1.gif)right center no-repeat;
+    font-weight: 700;
+}

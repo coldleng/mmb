@@ -1,0 +1,133 @@
+.hd {
+    position: relative;
+    height: 38px;
+}
+.hd .filter{
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    border-bottom: 1px solid #dadada;
+    height: 38px;
+    box-sizing: border-box;
+    padding-right: 46px;
+    text-align: center;
+}
+.hd .filter ul{
+    width: 100%;
+}
+.hd .filter ul li{
+    float: left;
+    line-height: 37px;
+    width: 33%;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+.hd .filter ul li a{
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hd .search{
+    width: 46px;
+    border-bottom: 1px solid #dadada;
+    text-align: center;
+    border-left: 1px solid #dadada;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 38px;
+    box-sizing: border-box;
+    padding-top: 9px;
+}
+/*下拉*/
+.popbox{
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0px;
+    top: 38px;
+    box-shadow: 0px 3px 6px #dddddd;
+    display: none;
+}
+.popbox li{
+    border-bottom: 1px solid #dadada;
+    border-width: 0 0 1px 0;
+    position: relative;
+}
+.popbox li a{
+    display: block;
+    line-height: 40px;
+    padding: 0px 10px;
+    font-size: 16px;
+}
+.active_gs a{
+    background-color: #666;
+    color: white;
+}
+.on{
+    display: block;
+    z-index: 99;
+}
+/*内容*/
+.product_gs{
+    background-color: #f1f1f1;
+    padding: 6px 0px;
+}
+.product_gs ul{
+    width: 98%;
+    margin: 0 auto;
+}
+.product_gs ul li{
+    float: left;
+    width: 50%;
+}
+.product_gs a{
+    display: block;
+    margin: 4px;
+    background-color: #ffffff;
+}
+.product_gs a img{
+    width: 147px;
+    height: 147px;
+}
+.product_gs .title{
+    color: #333333;
+    word-break: break-all;
+    padding: 0 6px;
+    height: 14px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 6px;
+}
+.product_gs .other{
+    padding: 6px;
+}
+.product_gs .other .price{
+    float: left;
+    color: #f8601d;
+    font-size: 20px;
+}
+.product_gs .other .price em{
+    font-style: normal;
+    font-size: 10px;
+    color: #f8601d;
+}
+.product_gs .other .collect{
+    float: right;
+    height: 21px;
+    background-color: #f8601d;
+    color: white;
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+}
